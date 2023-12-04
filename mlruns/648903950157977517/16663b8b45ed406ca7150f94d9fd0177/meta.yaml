@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/648903950157977517/16663b8b45ed406ca7150f94d9fd0177/artifacts
+end_time: 1701711600182
+entry_point_name: ''
+experiment_id: '648903950157977517'
+lifecycle_stage: active
+run_id: 16663b8b45ed406ca7150f94d9fd0177
+run_name: TS_Base_Model_ARIMA
+run_uuid: 16663b8b45ed406ca7150f94d9fd0177
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701711599331
+status: 3
+tags: []
+user_id: foton
