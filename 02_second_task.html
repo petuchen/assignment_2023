@@ -16998,7 +16998,7 @@ CV MAPE score =&gt; 39.60045354115167
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Run model with mkflow</span>
@@ -17026,7 +17026,7 @@ CV MAPE score =&gt; 39.60045354115167
     <span class="c1"># fitting and forcasting</span>
 
     <span class="n">m</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_df</span><span class="p">)</span>
-    <span class="n">future</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">make_future_dataframe</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;W&#39;</span><span class="p">)</span>
+    <span class="n">future</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">make_future_dataframe</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;W-Thu&#39;</span><span class="p">)</span>
     <span class="n">forcast</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">future</span><span class="p">)</span>
     <span class="n">plot_plotly</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">forcast</span><span class="p">)</span>
     <span class="n">plot_components_plotly</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">forcast</span><span class="p">)</span>
@@ -17059,37 +17059,37 @@ CV MAPE score =&gt; 39.60045354115167
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aba8d110&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aacdd150&gt;</pre>
 </div>
 
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aba8d110&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aacdd150&gt;</pre>
 </div>
 
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aba8d110&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aacdd150&gt;</pre>
 </div>
 
 </div>
@@ -17099,20 +17099,20 @@ CV MAPE score =&gt; 39.60045354115167
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>18:40:00 - cmdstanpy - INFO - Chain [1] start processing
-18:40:00 - cmdstanpy - INFO - Chain [1] done processing
+<pre>19:04:25 - cmdstanpy - INFO - Chain [1] start processing
+19:04:25 - cmdstanpy - INFO - Chain [1] done processing
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aba8d110&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aacdd150&gt;</pre>
 </div>
 
 </div>
@@ -17152,22 +17152,22 @@ CV MAPE score =&gt; 39.60045354115167
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>18:40:02 - cmdstanpy - INFO - Chain [1] start processing
-18:40:02 - cmdstanpy - INFO - Chain [1] done processing
-18:40:02 - cmdstanpy - INFO - Chain [1] start processing
-18:40:02 - cmdstanpy - INFO - Chain [1] done processing
-18:40:02 - cmdstanpy - INFO - Chain [1] start processing
-18:40:02 - cmdstanpy - INFO - Chain [1] done processing
-18:40:03 - cmdstanpy - INFO - Chain [1] start processing
-18:40:03 - cmdstanpy - INFO - Chain [1] done processing
-18:40:03 - cmdstanpy - INFO - Chain [1] start processing
-18:40:03 - cmdstanpy - INFO - Chain [1] done processing
+<pre>19:04:25 - cmdstanpy - INFO - Chain [1] start processing
+19:04:25 - cmdstanpy - INFO - Chain [1] done processing
+19:04:25 - cmdstanpy - INFO - Chain [1] start processing
+19:04:25 - cmdstanpy - INFO - Chain [1] done processing
+19:04:25 - cmdstanpy - INFO - Chain [1] start processing
+19:04:25 - cmdstanpy - INFO - Chain [1] done processing
+19:04:25 - cmdstanpy - INFO - Chain [1] start processing
+19:04:26 - cmdstanpy - INFO - Chain [1] done processing
+19:04:26 - cmdstanpy - INFO - Chain [1] start processing
+19:04:26 - cmdstanpy - INFO - Chain [1] done processing
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
@@ -17210,7 +17210,7 @@ CV MAPE score =&gt; 39.60045354115167
       <td>0.165771</td>
       <td>0.131736</td>
       <td>0.181023</td>
-      <td>1.0</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>1</th>
@@ -17232,7 +17232,7 @@ CV MAPE score =&gt; 39.60045354115167
       <td>0.216936</td>
       <td>0.109246</td>
       <td>0.210617</td>
-      <td>0.6</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>3</th>
@@ -17314,7 +17314,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Run model with log transform</span>
@@ -17344,10 +17344,14 @@ class="
     <span class="c1"># fitting and forcasting</span>
 
     <span class="n">m</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_df</span><span class="p">)</span>
-    <span class="n">future</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">make_future_dataframe</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;W&#39;</span><span class="p">)</span>
+    <span class="n">future</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">make_future_dataframe</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;W-Thu&#39;</span><span class="p">)</span>
     <span class="n">forcast</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">future</span><span class="p">)</span>
     <span class="n">plot_plotly</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">forcast</span><span class="p">)</span>
     <span class="n">plot_components_plotly</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">forcast</span><span class="p">)</span>
+
+    <span class="n">output</span> <span class="o">=</span> <span class="n">forcast</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;ds&#39;</span><span class="p">)</span>
+    <span class="n">output</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)[[</span><span class="s1">&#39;yhat_lower&#39;</span><span class="p">,</span> <span class="s1">&#39;yhat&#39;</span><span class="p">,</span> <span class="s1">&#39;yhat_upper&#39;</span><span class="p">]]</span>\
+    <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;5weeks_prediction.csv&#39;</span><span class="p">)</span>
 
     <span class="c1"># k-fold forcasting error</span>
     <span class="n">df_cv</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">cutoffs</span><span class="o">=</span> <span class="n">cutoff_date</span><span class="p">,</span> <span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;5 W&#39;</span><span class="p">)</span>
@@ -17377,37 +17381,37 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aadb4690&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aaf32e90&gt;</pre>
 </div>
 
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aadb4690&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aaf32e90&gt;</pre>
 </div>
 
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aadb4690&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aaf32e90&gt;</pre>
 </div>
 
 </div>
@@ -17417,20 +17421,20 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>18:40:05 - cmdstanpy - INFO - Chain [1] start processing
-18:40:05 - cmdstanpy - INFO - Chain [1] done processing
+<pre>19:04:34 - cmdstanpy - INFO - Chain [1] start processing
+19:04:34 - cmdstanpy - INFO - Chain [1] done processing
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;prophet.forecaster.Prophet at 0x2aadb4690&gt;</pre>
+<pre>&lt;prophet.forecaster.Prophet at 0x2aaf32e90&gt;</pre>
 </div>
 
 </div>
@@ -17470,22 +17474,22 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>18:40:05 - cmdstanpy - INFO - Chain [1] start processing
-18:40:05 - cmdstanpy - INFO - Chain [1] done processing
-18:40:05 - cmdstanpy - INFO - Chain [1] start processing
-18:40:06 - cmdstanpy - INFO - Chain [1] done processing
-18:40:06 - cmdstanpy - INFO - Chain [1] start processing
-18:40:06 - cmdstanpy - INFO - Chain [1] done processing
-18:40:06 - cmdstanpy - INFO - Chain [1] start processing
-18:40:06 - cmdstanpy - INFO - Chain [1] done processing
-18:40:06 - cmdstanpy - INFO - Chain [1] start processing
-18:40:06 - cmdstanpy - INFO - Chain [1] done processing
+<pre>19:04:34 - cmdstanpy - INFO - Chain [1] start processing
+19:04:34 - cmdstanpy - INFO - Chain [1] done processing
+19:04:34 - cmdstanpy - INFO - Chain [1] start processing
+19:04:34 - cmdstanpy - INFO - Chain [1] done processing
+19:04:34 - cmdstanpy - INFO - Chain [1] start processing
+19:04:34 - cmdstanpy - INFO - Chain [1] done processing
+19:04:34 - cmdstanpy - INFO - Chain [1] start processing
+19:04:35 - cmdstanpy - INFO - Chain [1] done processing
+19:04:35 - cmdstanpy - INFO - Chain [1] start processing
+19:04:35 - cmdstanpy - INFO - Chain [1] done processing
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
@@ -17615,13 +17619,11 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Blouse</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">output</span> <span class="o">=</span> <span class="n">forcast</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;ds&#39;</span><span class="p">)</span>
-<span class="n">output</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)[[</span><span class="s1">&#39;yhat_lower&#39;</span><span class="p">,</span> <span class="s1">&#39;yhat&#39;</span><span class="p">,</span> <span class="s1">&#39;yhat_upper&#39;</span><span class="p">]]</span>\
-    <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;5weeks_prediction.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">make_future_dataframe</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;W-Thu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17637,19 +17639,164 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>date
-2020-08-13    10351
-2020-08-20    11852
-2020-08-27    11851
-2020-09-03    10448
-2020-09-10    10143
-Name: Blouse, dtype: int64</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Blouse</th>
+      <th>Dress</th>
+      <th>Hoodie</th>
+      <th>Jacket</th>
+      <th>Shorts</th>
+      <th>Skirt</th>
+      <th>T-shirt</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-08-13</th>
+      <td>10351</td>
+      <td>29723</td>
+      <td>2574</td>
+      <td>2782</td>
+      <td>9064</td>
+      <td>8874</td>
+      <td>19223</td>
+      <td>82591</td>
+    </tr>
+    <tr>
+      <th>2020-08-20</th>
+      <td>11852</td>
+      <td>25028</td>
+      <td>6210</td>
+      <td>6211</td>
+      <td>4999</td>
+      <td>7635</td>
+      <td>21342</td>
+      <td>83277</td>
+    </tr>
+    <tr>
+      <th>2020-08-27</th>
+      <td>11851</td>
+      <td>19010</td>
+      <td>9540</td>
+      <td>8123</td>
+      <td>2417</td>
+      <td>6746</td>
+      <td>17373</td>
+      <td>75060</td>
+    </tr>
+    <tr>
+      <th>2020-09-03</th>
+      <td>10448</td>
+      <td>17389</td>
+      <td>9732</td>
+      <td>8797</td>
+      <td>1935</td>
+      <td>6406</td>
+      <td>15197</td>
+      <td>69904</td>
+    </tr>
+    <tr>
+      <th>2020-09-10</th>
+      <td>10143</td>
+      <td>19805</td>
+      <td>7079</td>
+      <td>7550</td>
+      <td>1905</td>
+      <td>5905</td>
+      <td>13751</td>
+      <td>66138</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>103</th>
+      <td>2020-09-17</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>2020-09-24</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>2020-10-01</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>2020-10-08</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>2020-10-15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
