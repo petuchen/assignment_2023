@@ -4,7 +4,7 @@ entry_point_name: ''
 experiment_id: '648903950157977517'
 lifecycle_stage: active
 run_id: 8a5cfa71bca0427184bd78d804aa2719
-run_name: TS_Prophat_Model
+run_name: TS_Prophet_Model
 run_uuid: 8a5cfa71bca0427184bd78d804aa2719
 source_name: ''
 source_type: 4
