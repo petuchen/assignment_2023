@@ -3,10 +3,12 @@
 ---
 ## File & Directory
 
-+ 01_first_task.ipynb: notebook for the 1st question (with html format for easy checking)
-+ 02_second_task.ipynb: notebook for the 2nd question (with html format for easy checking)
++ 01_first_task.ipynb: notebook for the 1st question (+ extra html file for easy-checking)
++ 02_second_task.ipynb: notebook for the 2nd question (+ extra html file for easy-checking)
 + sales.csv: sales data
-+ presentation.html: final presentation in html format
++ 5weeks_prediction.csv: final result for the 5-week predictions
++ presentation.html: presentation in the html format
+
 
 ---
 ## Environment
