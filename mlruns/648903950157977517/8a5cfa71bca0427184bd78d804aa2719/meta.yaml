@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/648903950157977517/8a5cfa71bca0427184bd78d804aa2719/artifacts
+end_time: 1701708179366
+entry_point_name: ''
+experiment_id: '648903950157977517'
+lifecycle_stage: active
+run_id: 8a5cfa71bca0427184bd78d804aa2719
+run_name: TS_Prophat_Model
+run_uuid: 8a5cfa71bca0427184bd78d804aa2719
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701708177037
+status: 3
+tags: []
+user_id: foton
