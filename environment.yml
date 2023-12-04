@@ -1,0 +1,24 @@
+name: assignment_tc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - jupyter
+  - jupyterlab
+  - nb_conda_kernels
+  - pip:
+    - darts==0.27.0
+    - ipython==8.14.0
+    - Markdown==3.5.1
+    - matplotlib==3.7.1
+    - mlflow==2.8.1
+    - numpy==1.25.0
+    - pandas==1.5.3
+    - plotly==5.18.0
+    - prophet==1.1.5
+    - scikit_learn==1.2.2
+    - scipy==1.10.1
+    - seaborn==0.13.0
+    - statsmodels==0.14.0
